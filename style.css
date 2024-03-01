@@ -1,5 +1,5 @@
 *{
-    box-sizing: border-box;
+
     margin: 0;
 	padding: 0;
 	border: 0;
@@ -45,7 +45,7 @@ body {
     margin-top:10px;
     text-align: center;
     font-size: 18pt;
-    color: #ffffff;
+    color: black;
 }
 
 .btn {
@@ -75,14 +75,14 @@ margin: auto;
     display: none;
     text-align: center;
     font-size: 18pt;
-    color: #a81919;
+    color: black;
 }
 
 .initials-section {
     display: none;
     text-align: center;
     font-size: 18pt;
-    color: #ffffff;
+    color: black;
 }
 
 #initials:focus {
@@ -99,7 +99,7 @@ margin: auto;
     display: none;
     text-align: center;
     font-weight: 500;
-    color: #ffffff;
+    color: black;
     font-size: 18pt;
 }
 

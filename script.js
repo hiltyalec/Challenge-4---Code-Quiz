@@ -31,6 +31,8 @@ var quizChoice1 = {
 var quizChoice2 = {
     optionA: "A--  Yes",
     optionB: "B-- No",
+    optionC: "C-- Sometimes",
+    optionD: "D ~ Only inside of a function"
 
 }
 // D is correct
@@ -42,7 +44,7 @@ var quizChoice3 = {
 }
 // C is correct
 var quizChoice4 = {
-    optionA: "A--  The scriipt will not compile and will not execute.",
+    optionA: "A--  The script will not compile and will not execute.",
     optionB: "B--  The variable will be implicitly created with a default value of undefined.",
     optionC: "C--  A ReferenceError is thrown.",
     optionD: "D--  In strict mode, a ReferenceError is thrown, in non-strict mode, the variable evaluates to undefined."
@@ -77,7 +79,7 @@ startBtn.addEventListener("click", startTimer)
 
 function nextQuestion(){
 
-       if (correctIndex === theQuestions.length - 1) {
+       if (correctIndex === quizQuestions.length - 1) {
            setTimeout(function(){theTest.style.display = "none";
            initialsSection.style.display = "inline";
        }, 500);
@@ -123,7 +125,7 @@ function nextQuestion(){
                } else {
                    finalResult.textContent = "Wrong!"
                    setTimeout(function(){ finalResult.style.display = "none"}, 500);
-                   timeLeft -= 5;
+                   timeLeft -= 2;
                    countdown.textContent =  "Time: " + timeLeft + " seconds";
                }
                correctIndex++;
