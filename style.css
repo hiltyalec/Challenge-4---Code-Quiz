@@ -36,7 +36,7 @@ body {
 .quiztitle h1 {
     font-size: 70pt;
     font-weight: 500;
-    color: slategrey;
+    color: black;
     text-align: center;
     margin-bottom: auto;
 }
@@ -62,7 +62,7 @@ body {
 }
 
 .btn:hover {
-    background-color: #5d63d4;
+    background-color: orangered;
     transition: 0.7s
 }
 .submit-btn {
@@ -71,7 +71,7 @@ margin: auto;
 }
 
 .the-test {
-    margin-top: 85px;
+    margin-top: 90px;
     display: none;
     text-align: center;
     font-size: 18pt;
@@ -87,7 +87,7 @@ margin: auto;
 
 #initials:focus {
     margin: 30%;
-    border: none!important;
+    border: none;
 }
 
 .margin {
@@ -104,5 +104,5 @@ margin: auto;
 }
 
 .highscore-btn{
-    display: inline!important;
+    display: inline;
 }

@@ -26,7 +26,7 @@ var quizChoice1 = {
     optionB: "B--  <javascript>",
     optionC: "C--  <js>",
     optionD: "D--  <scripting>"
-}
+};
 // A is correct
 var quizChoice2 = {
     optionA: "A--  Yes",
@@ -34,37 +34,37 @@ var quizChoice2 = {
     optionC: "C-- Sometimes",
     optionD: "D ~ Only inside of a function"
 
-}
+};
 // D is correct
 var quizChoice3 = {
     optionA: "A--  A ReferenceError is thrown.",
     optionB: "B--  The variable is created in global scope",
     optionC: "C--  The variable is created in global or function scope, depending on where it is initialized.",
     optionD: "D--  In strict mode, a ReferenceError is thrown, in non-strict mode, the variable is created in the global scope."
-}
+};
 // C is correct
 var quizChoice4 = {
     optionA: "A--  The script will not compile and will not execute.",
     optionB: "B--  The variable will be implicitly created with a default value of undefined.",
     optionC: "C--  A ReferenceError is thrown.",
     optionD: "D--  In strict mode, a ReferenceError is thrown, in non-strict mode, the variable evaluates to undefined."
-}
+};
 // A is correct
 var quizChoice5 = {
     optionA: "A--  A SyntaxError is thrown with the message 'Invalid or unexpected token'.",
     optionB: "B--  The variable is created because numbers are valid characters in identifiers.",
     optionC: "C--  This is a special syntax that is used to declare variables used by the internal JavaScript engine.",
     optionD: "D--  Number variables in octal and hexadecimal formats must be declared with identifiers that begin with a digit."
-}
+};
 
-var quizAnswers = [quizChoice1, quizChoice2, quizChoice3, quizChoice4, quizChoice5]
+var quizAnswers = [quizChoice1, quizChoice2, quizChoice3, quizChoice4, quizChoice5];
 
 var right1 = quizChoice1.optionA;
 var right2 = quizChoice2.optionA;
 var right3 = quizChoice3.optionD;
 var right4 = quizChoice4.optionC;
 var right5 = quizChoice5.optionA;
-var rightAnswers = [right1, right2, right3, right4, right5]
+var rightAnswers = [right1, right2, right3, right4, right5];
  
 startBtn.addEventListener("click", startTimer)
 
@@ -93,7 +93,7 @@ function nextQuestion(){
            choice3.textContent = quizAnswers[correctIndex].optionC;
            choice4.textContent = quizAnswers[correctIndex].optionD;
        }
-       }
+       };
        
        var timeLeft = 60;
        var timerInterval;
@@ -109,7 +109,7 @@ function nextQuestion(){
                }
              }, 1000);
            return timerInterval;
-       }   
+       }; 
    
    theTest.addEventListener("click", verifyAnswer)
    
@@ -125,7 +125,7 @@ function nextQuestion(){
                } else {
                    finalResult.textContent = "Wrong!"
                    setTimeout(function(){ finalResult.style.display = "none"}, 500);
-                   timeLeft -= 2;
+                   timeLeft -= 5;
                    countdown.textContent =  "Time: " + timeLeft + " seconds";
                }
                correctIndex++;
@@ -159,7 +159,7 @@ function nextQuestion(){
            p.textContent = userInitial + ": " + timeLeft;
            document.querySelector(".user-scores").appendChild(p);    
        
-   }
+   };
    
    document.querySelector(".start-over").addEventListener("click", function(){
        
